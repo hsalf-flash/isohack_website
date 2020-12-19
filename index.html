@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title tag -->
+    <title>Isohack 2.O</title>
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Css Files -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/scrollbar.css" />
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        /* Temporary Style */
+        header.navbar_section {
+            height: 120px;
+            background-color: darkgray;
+        }
+
+        section.headline_home {
+            height: 350px;
+            background-color: lightblue;
+        }
+
+        section.about_section {
+            height: 350px;
+            background-color: rebeccapurple;
+        }
+
+        section.previous_year_event {
+            height: 350px;
+            background-color: darkcyan;
+        }
+
+        section.examples_section {
+            height: 350px;
+            background-color: darkolivegreen;
+        }
+
+        section.faq_section {
+            height: 350px;
+            background-color: tomato;
+        }
+
+        section.sponsors_section {
+            height: 350px;
+            background-color: grey;
+        }
+
+        footer.footer_section {
+            height: 100px;
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Scrollbar Section -->
+    <aside id="scroll_bar">
+        <p class="pt-2">
+            <a href="#navbar_section" id="home_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
+                <span>00</span> <span>Home</span>
+            </a>
+        </p>
+        
+        <p class="pt-2">
+            <a href="#about_section" id="about_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
+                <span>01</span> <span>About Us</span>
+            </a>
+        </p>
+
+        <p class="pt-2">
+            <a href="#previous_year_event" id="previous_year_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
+                <span>02</span> <span>Isohack 1.O</span>
+            </a>
+        </p>
+
+        <p class="pt-2">
+            <a href="#examples_section" id="examples_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
+                <span>03</span> <span>Examples</span>
+            </a>
+        </p>
+
+        <p class="pt-2">
+            <a href="#faq_section" id="faqs_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
+                <span>04</span> <span>FAQs</span>
+            </a>
+        </p>
+
+        <p class="pt-2">
+            <a href="#sponsors_section" id="sponsors_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
+                <span>05</span> <span>Sponsors</span>
+            </a>
+        </p>
+    </aside>
+
+    <!-- Navbar Section -->
+    <header class="navbar_section" id="navbar_section">
+        <h3>Navbar Section</h3>
+    </header>
+
+    <!-- Headline Home Section -->
+    <section class="headline_home" id="headline_section">
+        <h3>Headline, Deadline Home Section</h3>
+    </section>
+
+    <!-- About Section -->
+    <section class="about_section" id="about_section">
+        <h3>About Section</h3>
+    </section>
+
+    <!-- Previous Year Event Section -->
+    <section class="previous_year_event" id="previous_year_event">
+        <h3>Previous Year Event Section</h3>
+    </section>
+
+    <!-- Examples Section (What we want and Type of Projects) -->
+    <section class="examples_section" id="examples_section">
+        <h3>Examples (What we want, Type of Projects) Section</h3>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faq_section" id="faq_section">
+        <h3>FAQ Section</h3>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors_section" id="sponsors_section">
+        <h3>Sponsors Section</h3>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer_section">
+        <h3>Footer</h3>
+    </footer>
+
+
+    <!-- Inbuilt Javascript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom Script -->
+    <script src="./js/scrollbar.js" defer></script>
+</body>
+
+</html>
