@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* General Styles */
 * {
     padding: 0;
     margin: 0;
@@ -11,6 +12,27 @@ html {
 }
 
 body {
-    background-color: darkslategray;
-    text-align: center;
+    background-color: rgb(34, 53, 73);
+    overflow-x: hidden;
+}
+
+/******** Website Scrollbar CSS */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(32,50,70); 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(32,50,70);
 }

@@ -1,7 +1,7 @@
 // When the Page Will be load, 
 window.onload = () => {
     location.href = "#navbar_section";
-    document.getElementById('home_bar').style.borderLeft = "3px solid rebeccapurple";
+    document.getElementById('home_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
     document.querySelector('#home_bar span:nth-child(2)').style.display = "inline";
 }
 
@@ -11,10 +11,10 @@ const scrollToSec = (currentId) => {
     // Scrollbar Links Border
     let allLinksBorder = document.querySelectorAll('.scrollbar_link');
     for(let i=0; i<allLinksBorder.length; i++) 
-        allLinksBorder[i].style.borderLeft = "1.5px solid rgba(102,51,153,0.5)";
+        allLinksBorder[i].style.borderLeft = "1.5px solid rgba(119, 136, 153, 1)";
 
     let currentElement = document.getElementById(currentId);
-    currentElement.style.borderLeft = "3px solid rebeccapurple";
+    currentElement.style.borderLeft = "3.5px solid rgb(163,174,186)";
 
     // Scrollbar Links Name
     let allLinksName = document.querySelectorAll('.scrollbar_link span:nth-child(2)');

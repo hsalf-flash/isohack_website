@@ -9,19 +9,17 @@
     <!-- title tag -->
     <title>Isohack 2.O</title>
 
-    <!-- Bootstrap 4 CDN -->
+    <!-- Inbuilt CSS CDNs -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Css Files -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/about.css" />
 
     <style>
-        body {
-            text-align: center;
-        }
-
         /* Temporary Style */
         header.navbar_section {
             height: 120px;
@@ -31,11 +29,6 @@
         section.headline_home {
             height: 350px;
             background-color: lightblue;
-        }
-
-        section.about_section {
-            height: 350px;
-            background-color: rebeccapurple;
         }
 
         section.previous_year_event {
@@ -62,19 +55,25 @@
             height: 100px;
             background-color: darkslateblue;
         }
+
+        canvas {
+            cursor: normal;
+            display: none;
+            transform: translateX(-33%) translateY(-50px);
+        }
     </style>
 </head>
 
 <body>
 
     <!-- Scrollbar Section -->
-    <aside id="scroll_bar">
+    <aside data-aos="fade-up" data-aos-duration="1500" id="scroll_bar">
         <p class="pt-2">
             <a href="#navbar_section" id="home_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
                 <span>00</span> <span>Home</span>
             </a>
         </p>
-        
+
         <p class="pt-2">
             <a href="#about_section" id="about_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
                 <span>01</span> <span>About Us</span>
@@ -117,8 +116,38 @@
     </section>
 
     <!-- About Section -->
-    <section class="about_section" id="about_section">
-        <h3>About Section</h3>
+    <section id="about_section">
+        <div class="container pt-5">
+            <div class="row">
+                <!-- Nodes Logo -->
+                <div class="col-lg-5 offset-lg-1">
+                    <canvas id='canvas'></canvas>
+                </div>
+
+                <!-- About Content -->
+                <div class="col-lg-6">
+                    <h3 class="about_us_heading mb-4">Contest of neural networks and IT products using them</h3>
+
+                    <div class="row pt-5">
+                        <div class="col-2 about_division"></div>
+                        <div class="col-10">
+                            <p class="about_content pl-3">
+                                Submissions are accepted with any project based on neural
+                                networks: an application, a website, program, or mod for your favourite game. All
+                                projects will be published with open source code, and the winners will share 70 ETH.
+                            </p>
+                            <h5 class="py-2 pl-3">"It has to work"</h5>
+                            <p class="about_content pl-3">
+                                If you created a beautiful application that does not work, there's no point in it. If
+                                all your application design is an "Upload" button on a white background, but that the
+                                user automatically receives an interestingly edited photo, we will gladly accept this
+                                project for the contest.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Previous Year Event Section -->
@@ -146,7 +175,6 @@
         <h3>Footer</h3>
     </footer>
 
-
     <!-- Inbuilt Javascript Libraries -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -157,6 +185,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="./js/libs/dat.gui.min.js"></script>
+    <script type="text/javascript" src="./js/libs/animationFrame.js"></script>
+    <script type="text/javascript" src="./js/Nodes.js"></script>
+
+    <script>
+        AOS.init();
+        Nodes.init();
+    </script>
 
     <!-- Custom Script -->
     <script src="./js/scrollbar.js" defer></script>
