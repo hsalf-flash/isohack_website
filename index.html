@@ -2,44 +2,32 @@
 <html lang="en">
 
 <head>
-    <!-- meta tags -->
+    <!-- || meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- title tag -->
+    <!-- || title tag -->
     <title>Isohack 2.O</title>
+    <link rel="icon" type="image/icon" href="./img/logo/Skitm_logo.png" />
 
-    <!-- Inbuilt CSS CDNs -->
+    <!-- || Inbuilt CSS CDNs -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <!-- Css Files -->
+    <!-- || Css Files -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/faq.css" />
-
+    <link rel="stylesheet" href="./css/isohack1_O.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
 
     <style>
-        section.previous_year_event {
-            height: 350px;
-            background-color: darkcyan;
-        }
-
-        section.examples_section {
-            height: 350px;
-            background-color: darkolivegreen;
-        }
-
-        section.sponsors_section {
-            height: 350px;
-            background-color: grey;
-        }
-
         footer.footer_section {
             height: 100px;
             background-color: darkslateblue;
@@ -49,99 +37,107 @@
 
 <body>
 
-    <!-- Scrollbar Section -->
+    <!-- || Scrollbar Section [START] -->
     <aside data-aos="fade-up" data-aos-duration="1500" id="scroll_bar">
-        <p class="pt-2">
+        <p class="pt-3">
             <a href="#navbar_section" id="home_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
                 <span>00</span> <span>Home</span>
             </a>
         </p>
 
-        <p class="pt-2">
+        <p class="pt-3">
             <a href="#about_section" id="about_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
                 <span>01</span> <span>About Us</span>
             </a>
         </p>
 
-        <p class="pt-2">
+        <p class="pt-3">
             <a href="#previous_year_event" id="previous_year_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
                 <span>02</span> <span>Isohack 1.O</span>
             </a>
         </p>
 
-        <p class="pt-2">
-            <a href="#examples_section" id="examples_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
-                <span>03</span> <span>Examples</span>
+        <p class="pt-3">
+            <a href="#isohack_gallery_section" id="examples_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
+                <span>03</span> <span>Gallery</span>
             </a>
         </p>
 
-        <p class="pt-2">
+        <p class="pt-3">
             <a href="#faq_section" id="faqs_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
                 <span>04</span> <span>FAQs</span>
             </a>
         </p>
 
-        <p class="pt-2">
+        <p class="pt-3">
             <a href="#sponsors_section" id="sponsors_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
                 <span>05</span> <span>Sponsors</span>
             </a>
         </p>
     </aside>
+    <!-- || Scrollbar Section [END] -->
 
-    <!-- Navbar Section -->
-    <header id="navbar_section">
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(34, 53, 73);">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+    <!-- || Navbar & Home Deadline Section [START] -->
+    <main id="navbar_with_home">
+        <!-- Navbar Section -->
+        <header id="navbar_section" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo/iso_hack_logo.png" alt="Isohack2.O" />
+                    <span>ISOHACK 2.O</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#about_section">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#previous_year_event">Isohack-1.O</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#isohack_gallery_section">Gallery</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#faq_section">FAQs</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="btn navbar_register_btn" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Headline Home Section -->
+        <section class="headline_home" id="headline_section">
+            <div id="app">
+                <div id="wrapper" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+                    <h1 class="glitch">ISOHACK <span class="ml-1">2.O</span></h1>
+                    <h1 class="glitch" data-text="Hackathon"></h1>
+                </div>
+
+                <div class="row">
+                    <h5 class="isohack_tagline">Let the Glitch make a difference</h5>
+                </div>
             </div>
-        </nav>
-    </header>
+        </section>
+    </main>
+    <!-- || Navbar & Home Deadline Section [END] -->
 
-    <!-- Headline Home Section -->
-    <section class="headline_home" id="headline_section">
-        <div id="app">
-            <div id="wrapper">
-                <h1 class="glitch">Isohack2.0</h1>
-                <h1 class="glitch" data-text="hackathon"></h1>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
+    <!-- || About Section [START] -->
     <section id="about_section">
         <div class="container pt-5 pb-lg-0 pb-5">
+            <!-- Section Heading -->
+            <h3 class="section_heading"><span>About The Event</span></h3>
+
+            <!-- About Content -->
             <div class="row">
                 <!-- Nodes Logo -->
                 <div class="col-lg-5 offset-lg-1" id="isohack_canvas_box" data-aos="fade-right" data-aos-duration="1500"
@@ -176,22 +172,220 @@
             </div>
         </div>
     </section>
+    <!-- || About Section [END] -->
 
-    <!-- Previous Year Event Section -->
+
+    <!-- || Previous Year Event Section [START] -->
     <section class="previous_year_event" id="previous_year_event">
-        <h3>Previous Year Event Section</h3>
-    </section>
+        <div class="container pb-5">
+            <!-- Section Heading -->
+            <h3 class="section_heading"><span>Isohack 1.O</span></h3>
 
-    <!-- Examples Section (What we want and Type of Projects) -->
-    <section class="examples_section" id="examples_section">
-        <h3>Examples (What we want, Type of Projects) Section</h3>
-    </section>
+            <!-- Isohack Year 2019 -->
+            <div class="row">
+                <div class="col-lg-5 offset-lg-1 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <img src="./img/logo/isohack_previous_year1.png" alt="Isohack Previous Year"
+                        class="isohack_2019_logo d-block mx-auto" />
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6 col-12 pt-lg-5" data-aos="fade-down" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <!-- Gold Trophy -->
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <img src="./img/trophy/gold.png" class="winners_trophy" alt="Gold Trophy" />
+                        </div>
+                        <div class="col-8 winners_details_box">
+                            <div class="winners_details">
+                                <h6 class="pr-4"><span>Team Name -</span> AcroCoders</h6>
+                                <h6><span>Prize Money -</span> Rs.15000</h6>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- FAQs Section -->
+                    <!-- Silver Trophy -->
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <img src="./img/trophy/silver.png" class="winners_trophy" alt="Silver Trophy" />
+                        </div>
+                        <div class="col-8 winners_details_box">
+                            <div class="winners_details">
+                                <h6 class="pr-4"><span>Team Name -</span> Kuch Bhi</h6>
+                                <h6><span>Prize Money -</span> Rs.10000</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bronze Trophy -->
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <img src="./img/trophy/bronze.png" class="winners_trophy" alt="Bronze Trophy" />
+                        </div>
+                        <div class="col-8 winners_details_box">
+                            <div class="winners_details">
+                                <h6 class="pr-4"><span>Team Name -</span> CMBK</h6>
+                                <h6><span>Prize Money -</span> Rs.5000</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- || Previous Year Event Section [END] -->
+
+
+    <!-- || Isohack Image Gallery Section [START] -->
+    <section class="isohack_gallery_section" id="isohack_gallery_section">
+        <div class="container">
+            <!-- Heading -->
+            <h3 class="section_heading"><span>Isohack Gallery</span></h3>
+
+            <!-- Gallery Content -->
+            <div class="row">
+                <div class="col-md-11 offset-md-1">
+                    <div class="row mx-auto">
+                        <div class="col-sm-8 col-12 mb-2 px-0">
+                            <figure>
+                                <!-- Trigger the Modal -->
+                                <img class="myImg" src="./img/gallery/gallery1.jpg"
+                                    alt="Don't be Busy, be Productive" />
+
+                                <!-- The Modal -->
+                                <div class="myModal gallery-modal">
+
+                                    <!-- The Close Button -->
+                                    <span class="popup-close">&times;</span>
+
+                                    <!-- Modal Content (The Image) -->
+                                    <img class="modal-content gallery-img" />
+
+                                    <!-- Modal Caption (Image Text) -->
+                                    <div class="caption"></div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 col-12 mb-2 px-0">
+                            <figure>
+                                <!-- Trigger the Modal -->
+                                <img class="myImg" src="./img/gallery/gallery3.jpg"
+                                    alt="Great Things never came from comfort zones">
+
+                                <!-- The Modal -->
+                                <div class="myModal gallery-modal">
+
+                                    <!-- The Close Button -->
+                                    <span class="popup-close">&times;</span>
+
+                                    <!-- Modal Content (The Image) -->
+                                    <img class="modal-content gallery-img">
+
+                                    <!-- Modal Caption (Image Text) -->
+                                    <div class="caption"></div>
+                                </div>
+                            </figure>
+                            <figure>
+                                <!-- Trigger the Modal -->
+                                <img class="myImg" src="./img/gallery/gallery4.jpg"
+                                    alt="Stay Humble, Work Hard and be kind">
+
+                                <!-- The Modal -->
+                                <div class="myModal gallery-modal">
+
+                                    <!-- The Close Button -->
+                                    <span class="popup-close">&times;</span>
+
+                                    <!-- Modal Content (The Image) -->
+                                    <img class="modal-content gallery-img">
+
+                                    <!-- Modal Caption (Image Text) -->
+                                    <div class="caption"></div>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="w-100"></div>
+
+                        <div class="col-sm-4 col-12 mb-2 px-0">
+                            <figure>
+                                <!-- Trigger the Modal -->
+                                <img class="myImg" src="./img/gallery/gallery5.jpg"
+                                    alt="Don't Complain, Just Work Harder">
+
+                                <!-- The Modal -->
+                                <div class="myModal gallery-modal">
+
+                                    <!-- The Close Button -->
+                                    <span class="popup-close">&times;</span>
+
+                                    <!-- Modal Content (The Image) -->
+                                    <img class="modal-content gallery-img">
+
+                                    <!-- Modal Caption (Image Text) -->
+                                    <div class="caption"></div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 col-12 mb-2 px-0">
+                            <figure>
+                                <!-- Trigger the Modal -->
+                                <img class="myImg" src="./img/gallery/gallery2.jpg" alt="It's The Will Not The Skill">
+
+                                <!-- The Modal -->
+                                <div class="myModal gallery-modal">
+
+                                    <!-- The Close Button -->
+                                    <span class="popup-close">&times;</span>
+
+                                    <!-- Modal Content (The Image) -->
+                                    <img class="modal-content gallery-img">
+
+                                    <!-- Modal Caption (Image Text) -->
+                                    <div class="caption"></div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 col-12 mb-2 px-0">
+                            <figure>
+                                <!-- Trigger the Modal -->
+                                <img class="myImg" src="./img/gallery/gallery6.jpg"
+                                    alt="Don't Confuse having a career with having a Life">
+
+                                <!-- The Modal -->
+                                <div class="myModal gallery-modal">
+
+                                    <!-- The Close Button -->
+                                    <span class="popup-close">&times;</span>
+
+                                    <!-- Modal Content (The Image) -->
+                                    <img class="modal-content gallery-img">
+
+                                    <!-- Modal Caption (Image Text) -->
+                                    <div class="caption"></div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-11 offset-md-1">
+                    <div class="row mx-auto">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- || Isohack Image Gallery Section [END] -->
+
+
+    <!-- || FAQs Section [START] -->
     <section id="faq_section">
         <div class="container py-5">
             <!-- Heading -->
-            <h2 class="faq_heading"><span>F.A.Q</span></h2>
+            <h3 class="section_heading"><span>F.A.Q</span></h3>
 
             <!-- Questions -->
             <div class="row" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
@@ -341,18 +535,23 @@
             </div>
         </div>
     </section>
+    <!-- || FAQs Section [END] -->
 
-    <!-- Sponsors Section -->
+
+    <!-- || Sponsors Section [START] -->
     <section class="sponsors_section" id="sponsors_section">
-        <h3>Sponsors Section</h3>
     </section>
+    <!-- || Sponsors Section [END] -->
 
-    <!-- Footer -->
+
+    <!-- || Footer Section [START] -->
     <footer class="footer_section">
         <h3>Footer</h3>
     </footer>
+    <!-- || Footer Section [END] -->
 
-    <!-- Inbuilt Javascript Libraries -->
+
+    <!-- || Inbuilt Javascript Libraries -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -374,8 +573,9 @@
         Nodes.init();
     </script>
 
-    <!-- Custom Script -->
+    <!-- || Custom Script -->
     <script src="./js/scrollbar.js" defer></script>
+    <script src="./js/gallery.js" defer></script>
 </body>
 
 </html>
