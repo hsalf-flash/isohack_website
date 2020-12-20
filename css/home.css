@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
 #app {
   height: 100vh;
@@ -32,12 +33,18 @@ text set in the data-text attribute. */
 .glitch {
   position: relative;
   color: white;
-  font-size: 4em;
-  letter-spacing: .5em;
-  font-weight: bolder;
+  font-weight: 900;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .2em;
   /* Animation provies a slight random skew. Check bottom of doc
   for more information on how to random skew. */
   animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+@media screen and (min-width: 769px) {
+  .glitch {
+    font-size: 3.5em;
+    letter-spacing: .3em;
+  }
 }
 .glitch::before {
   content: attr(data-text);

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
     <!-- Css Files -->
@@ -21,16 +21,11 @@
     <link rel="stylesheet" href="./css/scrollbar.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/home.css" />
-    
+    <link rel="stylesheet" href="./css/faq.css" />
+
 
     <style>
-        /* Temporary Style */
-        header.navbar_section {
-            height: 120px;
-            background-color: darkgray;
-        }
-
-         section.previous_year_event {
+        section.previous_year_event {
             height: 350px;
             background-color: darkcyan;
         }
@@ -38,11 +33,6 @@
         section.examples_section {
             height: 350px;
             background-color: darkolivegreen;
-        }
-
-        section.faq_section {
-            height: 350px;
-            background-color: tomato;
         }
 
         section.sponsors_section {
@@ -99,15 +89,51 @@
     </aside>
 
     <!-- Navbar Section -->
-    <header class="navbar_section" id="navbar_section">
-        <h3>Navbar Section</h3>
+    <header id="navbar_section">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(34, 53, 73);">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
     </header>
 
     <!-- Headline Home Section -->
     <section class="headline_home" id="headline_section">
-         <div id="app">
+        <div id="app">
             <div id="wrapper">
-                <h1 class="glitch"> Isohack2.0</h1>
+                <h1 class="glitch">Isohack2.0</h1>
                 <h1 class="glitch" data-text="hackathon"></h1>
             </div>
         </div>
@@ -118,13 +144,16 @@
         <div class="container pt-5 pb-lg-0 pb-5">
             <div class="row">
                 <!-- Nodes Logo -->
-                <div class="col-lg-5 offset-lg-1" id="isohack_canvas_box">
+                <div class="col-lg-5 offset-lg-1" id="isohack_canvas_box" data-aos="fade-right" data-aos-duration="1500"
+                    data-aos-delay="100">
                     <canvas id='canvas'></canvas>
                 </div>
 
                 <!-- About Content -->
-                <div class="col-lg-6 col-md-10 offset-lg-0 offset-md-2">
-                    <h3 class="about_us_heading mb-sm-4 mb-3">Contest of neural networks and IT products using them</h3>
+                <div class="col-lg-6 col-md-10 offset-lg-0 offset-md-2" data-aos="fade-left" data-aos-duration="1500"
+                    data-aos-delay="100">
+                    <h3 class="about_us_heading mb-sm-4 mb-3 mt-5">Contest of neural networks and IT products using them
+                    </h3>
 
                     <div class="row pt-sm-4 pt-3">
                         <div class="col-2 about_division"></div>
@@ -159,8 +188,158 @@
     </section>
 
     <!-- FAQs Section -->
-    <section class="faq_section" id="faq_section">
-        <h3>FAQ Section</h3>
+    <section id="faq_section">
+        <div class="container py-5">
+            <!-- Heading -->
+            <h2 class="faq_heading"><span>F.A.Q</span></h2>
+
+            <!-- Questions -->
+            <div class="row" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <div class="col-md-10 offset-md-1 pb-4" id="faq_question">
+                    <div class="card">
+                        <div class="card-header" id="faqHeadOne">
+                            <div class="row">
+                                <div class="col-sm-1 col-2">
+                                    <i class="fa fa-hand-o-right faq_hand" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 col-10">
+                                    <a class="faq_link" data-toggle="collapse" data-target="#faqOne"
+                                        aria-expanded="true" aria-controls="faqOne">
+                                        HOW DO I ACTIVATE MY ACCOUNT?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="faqOne" class="collapse show" aria-labelledby="faqHeadOne" data-parent="#faq_question">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-1 col-2 faq_division"></div>
+                                    <div class="col-sm-11 col-10">
+                                        The instructions to activate your account will be sent to your email once you
+                                        have submitted the registration form. If you did not receive this email, your
+                                        email service provider’s mailing software may be blocking it. You can try
+                                        checking your junk / spam folder or contact us at help@samplestore.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="faqHeadTwo">
+                            <div class="row">
+                                <div class="col-sm-1 col-2">
+                                    <i class="fa fa-hand-o-right faq_hand" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 col-10">
+                                    <a class="faq_link" data-toggle="collapse" data-target="#faqTwo"
+                                        aria-expanded="true" aria-controls="faqTwo">
+                                        WHY MUST I MAKE PAYMENT IMMEDIATELY AT CHECKOUT?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="faqTwo" class="collapse" aria-labelledby="faqHeadTwo" data-parent="#faq_question">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-1 col-2 faq_division"></div>
+                                    <div class="col-sm-11 col-10">
+                                        Sample ordering is on ‘first-come-first-served’ basis. To ensure that you get
+                                        your desired samples, it is recommended that you make your payment within 60
+                                        minutes of checking out.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="faqHeadThree">
+                            <div class="row">
+                                <div class="col-sm-1 col-2">
+                                    <i class="fa fa-hand-o-right faq_hand" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 col-10">
+                                    <a class="faq_link" data-toggle="collapse" data-target="#faqThree"
+                                        aria-expanded="true" aria-controls="faqThree">
+                                        HOW CAN I TRACK MY ORDERS & PAYMENT?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="faqThree" class="collapse" aria-labelledby="faqHeadThree" data-parent="#faq_question">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-1 col-2 faq_division"></div>
+                                    <div class="col-sm-11 col-10">
+                                        After logging into your account, the status of your checkout history can be
+                                        found under Order History. For orders via registered postage, a tracking number
+                                        (article tracking number) will be given to you after the receipt given from
+                                        Singapore Post Limited (SingPost).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="faqHeadFour">
+                            <div class="row">
+                                <div class="col-sm-1 col-2">
+                                    <i class="fa fa-hand-o-right faq_hand" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 col-10">
+                                    <a class="faq_link" data-toggle="collapse" data-target="#faqFour"
+                                        aria-expanded="true" aria-controls="faqFour">
+                                        HOW DO I CANCEL MY ORDERS BEFORE I MAKE A PAYMENT?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="faqFour" class="collapse" aria-labelledby="faqHeadFour" data-parent="#faq_question">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-1 col-2 faq_division"></div>
+                                    <div class="col-sm-11 col-10">
+                                        After logging into your account, go to your Shopping Cart. Here, you will be
+                                        able to make payment or cancel your order. Note: We cannot give refunds once
+                                        payment is verified.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="faqHeadFive">
+                            <div class="row">
+                                <div class="col-sm-1 col-2">
+                                    <i class="fa fa-hand-o-right faq_hand" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 col-10">
+                                    <a class="faq_link" data-toggle="collapse" data-target="#faqFive"
+                                        aria-expanded="true" aria-controls="faqFive">
+                                        WHAT IS THE ACCUMULATED DELIVERY FEE FOR? HOW MUCH IS THE HANDLING FEE?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="faqFive" class="collapse" aria-labelledby="faqHeadFive" data-parent="#faq_question">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-1 col-2 faq_division"></div>
+                                    <div class="col-sm-11 col-10">
+                                        The flat-rate handling fee is S$5.99 and it is only applicable to normal
+                                        samples. For free samples, they are fully paid for and there are no additional
+                                        charges to deliver the free samples.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Sponsors Section -->
@@ -184,6 +363,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://use.fontawesome.com/fce9801cfe.js"></script>
+
     <script type="text/javascript" src="./js/libs/dat.gui.min.js"></script>
     <script type="text/javascript" src="./js/libs/animationFrame.js"></script>
     <script type="text/javascript" src="./js/Nodes.js"></script>
