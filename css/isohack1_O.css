@@ -28,3 +28,11 @@
 .winners_details span {
     font-weight: bold;
 }
+
+img.winners_gallery {
+    transition: 0.6s;
+}
+
+img.winners_gallery:hover {
+    transform: translateY(-8px) !important;
+}
