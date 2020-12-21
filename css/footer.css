@@ -8,6 +8,8 @@
     font-weight: 700;
     font-family: Roboto;
     margin: 0 !important;
+    position: relative;
+    bottom: -24px !important;
 }
 
 .footer-distributed {
