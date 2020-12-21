@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* Initial Condition in Mobile and Desktop View */
+#mobile_humberger_menu {
+    display: none;
+}
+
+#desktop_menu {
+    display: block;
+}
+
 #navbar_with_home {
   background-image: url('https://wallpapercave.com/wp/wp2863975.gif');
   background-size: cover;

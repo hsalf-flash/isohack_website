@@ -28,21 +28,9 @@
     <link rel="stylesheet" href="./css/gallery.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/glitch_font01.css" />
-
-    <style>
-        #mobile_humberger_menu {
-            display: none;
-        }
-
-        #desktop_menu {
-            display: block;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- <i class="fa fa-bars menu-icon" aria-hidden="true" id="bar" onclick="openMenu(this)"></i>
-    <i class="fa fa-times menu-close-icon" aria-hidden="true" id="cross" onclick="closeMenu(this)"></i> -->
 
     <!-- || Mobile Humberger Menu -->
     <div id="mobile_humberger_menu">
@@ -88,7 +76,7 @@
     <!-- || Desktop Navbar with all other Components -->
     <div id="desktop_menu">
         <!-- || Scrollbar Section [START] -->
-        <aside data-aos="fade-up" data-aos-duration="1500" id="scroll_bar">
+        <aside data-aos="fade-up" id="scroll_bar">
             <p class="pt-3">
                 <a href="#navbar_section" id="home_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
                     <span>00</span> <span>Home</span>
@@ -133,7 +121,7 @@
         <!-- || Navbar & Home Deadline Section [START] -->
         <main id="navbar_with_home">
             <!-- Navbar Section -->
-            <header id="navbar_section" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+            <header id="navbar_section" data-aos="fade-down">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <a class="navbar-brand" href="./index.html"><img src="./img/logo/iso_hack_logo.png"
                             alt="Isohack2.O" />
@@ -173,12 +161,12 @@
             <!-- Headline Home Section -->
             <section class="headline_home" id="headline_section">
                 <div id="app">
-                    <div id="wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <div id="wrapper" data-aos="fade-up">
                         <h1 class="glitch">ISOHACK <span class="ml-1">2.O</span></h1>
                         <h1 class="glitch" data-text="Hackathon"></h1>
                     </div>
 
-                    <div class="row" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="row" data-aos="fade-up">
                         <h5 class="isohack_tagline">Let the Glitch make a difference</h5>
                     </div>
                 </div>
@@ -198,14 +186,12 @@
                 <!-- About Content -->
                 <div class="row">
                     <!-- Nodes Logo -->
-                    <div class="col-lg-5 offset-lg-1" id="isohack_canvas_box" data-aos="fade-up"
-                        data-aos-duration="1500" data-aos-delay="100">
+                    <div class="col-lg-5 offset-lg-1" id="isohack_canvas_box" data-aos="fade-up">
                         <canvas id='canvas'></canvas>
                     </div>
 
                     <!-- About Content -->
-                    <div class="col-lg-6 col-md-10 offset-lg-0 offset-md-2" data-aos="fade-up" data-aos-duration="1500"
-                        data-aos-delay="100">
+                    <div class="col-lg-6 col-md-10 offset-lg-0 offset-md-2" data-aos="fade-up">
                         <h3 class="about_us_heading mb-sm-4 mb-3 mt-5">Isohack 2.0
                         </h3>
 
@@ -245,13 +231,11 @@
 
                 <!-- Isohack Year 2019 -->
                 <div class="row">
-                    <div class="col-lg-5 offset-lg-1 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100"
-                        data-aos-duration="1000">
+                    <div class="col-lg-5 offset-lg-1 col-md-6 col-12" data-aos="fade-up">
                         <img src="./img/logo/isohack_previous_year1.png" alt="Isohack Previous Year"
                             class="isohack_2019_logo d-block mx-auto" />
                     </div>
-                    <div class="col-lg-5 offset-lg-1 col-md-6 col-12 pt-lg-5" data-aos="fade-down" data-aos-delay="100"
-                        data-aos-duration="1000">
+                    <div class="col-lg-5 offset-lg-1 col-md-6 col-12 pt-lg-5" data-aos="fade-down">
                         <!-- Gold Trophy -->
                         <div class="row mt-4">
                             <div class="col-4">
@@ -297,7 +281,7 @@
                 <div class="row">
                     <div class="col-md-4 offset-md-2 col-sm-6 col-12 my-3">
                         <img class="myImg winners_gallery" src="./img/trophy/winner2.jpg" alt="Winners"
-                            data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" />
+                            data-aos="fade-up" />
 
                         <!-- The Modal -->
                         <div class="myModal gallery-modal">
@@ -314,7 +298,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-12 my-3">
                         <img class="myImg winners_gallery" src="./img/trophy/winner1.jpg" alt="Winners"
-                            data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" />
+                            data-aos="fade-up" />
 
                         <!-- The Modal -->
                         <div class="myModal gallery-modal">
@@ -340,8 +324,7 @@
                 <div class="row">
                     <div class="col-md-11 offset-md-1">
                         <div class="row">
-                            <div class="col-md-8 col-12 mt-3" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
+                            <div class="col-md-8 col-12 mt-3" data-aos="fade-up">
                                 <!-- Trigger the Modal -->
                                 <img class="myImg" src="./img/gallery/gallery1.jpg"
                                     alt="Don't be Busy, be Productive" />
@@ -355,7 +338,7 @@
                             </div>
 
                             <div class="col-md-4 col-sm-6 col-12 mt-3">
-                                <div class="" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                                <div class="" data-aos="fade-up">
                                     <!-- Trigger the Modal -->
                                     <img class="myImg" src="./img/gallery/gallery3.jpg"
                                         alt="Great Things never came from comfort zones" />
@@ -368,7 +351,7 @@
                                     </div>
                                 </div>
 
-                                <div class="mt-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                                <div class="mt-3" data-aos="fade-up">
                                     <!-- Trigger the Modal -->
                                     <img class="myImg" src="./img/gallery/gallery4.jpg"
                                         alt="Stay Humble, Work Hard and be kind">
@@ -382,8 +365,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
+                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up">
                                 <!-- Trigger the Modal -->
                                 <img class="myImg" src="./img/gallery/gallery5.jpg"
                                     alt="Don't Complain, Just Work Harder">
@@ -396,8 +378,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
+                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up">
                                 <!-- Trigger the Modal -->
                                 <img class="myImg" src="./img/gallery/gallery2.jpg" alt="It's The Will Not The Skill">
 
@@ -409,8 +390,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
+                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up">
                                 <!-- Trigger the Modal -->
                                 <img class="myImg" src="./img/gallery/gallery6.jpg"
                                     alt="Don't Confuse having a career with having a Life">
@@ -423,8 +403,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
+                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up">
                                 <!-- Trigger the Modal -->
                                 <img class="myImg" src="./img/gallery/gallery7.jpg" alt="You can't solve a problem on the
                                     same level that it was created. You have to rise above it to the next level." />
@@ -437,8 +416,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
+                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up">
                                 <!-- Trigger the Modal -->
                                 <img class="myImg" src="./img/gallery/gallery8.jpg"
                                     alt="Alone we can do so little; together we can do so much." />
@@ -451,8 +429,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
+                            <div class="col-md-4 col-sm-6 col-12 mt-3" data-aos="fade-up">
                                 <!-- Trigger the Modal -->
                                 <img class="myImg" src="./img/gallery/gallery9.jpg"
                                     alt="Somewhere Something Incredible is waiting to be known." />
@@ -466,7 +443,7 @@
                             </div>
 
                             <div class="col-md-4 col-sm-6 col-12">
-                                <div class="mt-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                                <div class="mt-3" data-aos="fade-up">
                                     <!-- Trigger the Modal -->
                                     <img class="myImg" src="./img/gallery/gallery10.jpg"
                                         alt="I will act as if what I do will make a difference." />
@@ -479,7 +456,7 @@
                                     </div>
                                 </div>
 
-                                <div class="mt-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                                <div class="mt-3" data-aos="fade-up">
                                     <!-- Trigger the Modal -->
                                     <img class="myImg" src="./img/gallery/gallery12.jpg"
                                         alt="You must do the thing you think you cannot do." />
@@ -493,8 +470,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-8 col-12 mt-3" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-duration="1000">
+                            <div class="col-md-8 col-12 mt-3" data-aos="fade-up">
                                 <!-- Trigger the Modal -->
                                 <img class="myImg" src="./img/gallery/gallery11.jpg"
                                     alt="Imagination is more important than knowledge." />
@@ -521,7 +497,7 @@
                 <h3 class="section_heading glitch-font" data-text="F.A.Q"><span class="glitch-font-h3">F.A.Q</span></h3>
 
                 <!-- Questions -->
-                <div class="row" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <div class="row" data-aos="fade-up">
                     <div class="col-md-10 offset-md-1 pb-4" id="faq_question">
                         <div class="card">
                             <div class="card-header" id="faqHeadOne">
@@ -717,7 +693,12 @@
     <script type="text/javascript" src="./js/Nodes.js"></script>
 
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            delay: 100,
+            once: true,
+            easing: 'ease-in-out'
+        });
         Nodes.init();
     </script>
 
