@@ -3,6 +3,8 @@ window.onload = () => {
     location.href = "#navbar_section";
     document.getElementById('home_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
     document.querySelector('#home_bar span:nth-child(2)').style.display = "inline";
+    // console.log(window.innerWidth);
+    // console.log(window.innerHeight);
 }
 
 // When the user clicks on any Scrollbar Link
