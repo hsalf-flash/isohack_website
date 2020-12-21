@@ -29,6 +29,12 @@
     letter-spacing: 1px;
 }
 
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        padding-top: 10px;
+    }
+}
+
 .navbar-brand img {
     width: 70px;
     height: auto;
@@ -83,6 +89,7 @@ a.nav-link:hover {
 #mobile_humberger_menu {
     width: 100%;
     height: 100%;
+    padding-top: 4.3px;
 }
 
 .humberger_link_box {
