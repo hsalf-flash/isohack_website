@@ -44,27 +44,27 @@ window.addEventListener('scroll', () => {
 
     if (Math.abs(home_position) < screen_position) {
         allLinksBlank();
-        document.querySelector('a[href="#navbar_with_home"]').style.borderLeft = "3.5px solid rgb(163,174,186)";
+        document.querySelector('#home_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#navbar_with_home"] span:nth-child(2)').style.display = 'inline';
     }
     else if (Math.abs(about_position) < screen_position) {
         allLinksBlank();
-        document.querySelector('a[href="#about_section"]').style.borderLeft = "3.5px solid rgb(163,174,186)";
+        document.querySelector('#about_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#about_section"] span:nth-child(2)').style.display = 'inline';
     }
     else if (Math.abs(isohack1_O_position) < screen_position) {
         allLinksBlank();
-        document.querySelector('a[href="#previous_year_event"]').style.borderLeft = "3.5px solid rgb(163,174,186)";
+        document.querySelector('#previous_year_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#previous_year_event"] span:nth-child(2)').style.display = 'inline';
     }
     else if (Math.abs(gallery_position) < screen_position) {
         allLinksBlank();
-        document.querySelector('a[href="#isohack_gallery_section"]').style.borderLeft = "3.5px solid rgb(163,174,186)";
+        document.querySelector('#gallery_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#isohack_gallery_section"] span:nth-child(2)').style.display = 'inline';
     }
     else if (Math.abs(faq_position) < screen_position) {
         allLinksBlank();
-        document.querySelector('a[href="#faq_section"]').style.borderLeft = "3.5px solid rgb(163,174,186)";
+        document.querySelector('#faqs_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#faq_section"] span:nth-child(2)').style.display = 'inline';
     }
 });
