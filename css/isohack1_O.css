@@ -30,9 +30,9 @@
 }
 
 img.winners_gallery {
-    transition: 0.6s;
+    transition: 0.6s !important;
 }
 
 img.winners_gallery:hover {
-    transform: translateY(-8px) !important;
+    transform: translateY(-6px) !important;
 }

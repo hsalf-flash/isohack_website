@@ -4,14 +4,17 @@
 .myImg {
     border-radius: 0px;
     cursor: zoom-in;
-    transition: 0.3s;
+    transition: 0.6s;
     width: 100% !important;
     height: auto !important;
     display: block;
     margin: auto;
   }
   
-  .myImg:hover {opacity: 0.7;}
+  .myImg:hover {
+    opacity: 0.7;
+    transform: translateY(-6px) !important;
+  }
   
   /* The Modal (background) */
   .gallery-modal {
@@ -25,7 +28,7 @@
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
   }
   
   /* Modal Content (Image) */
