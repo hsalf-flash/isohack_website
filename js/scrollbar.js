@@ -27,6 +27,10 @@ window.addEventListener('scroll', () => {
     let faq_sec = document.querySelector('#faq_section');
     let faq_position = faq_sec.getBoundingClientRect().top;
 
+    // Sponsors Section
+    // let sponsors_sec = document.querySelector('#sponsors_section');
+    // let sponsors_position = sponsors_sec.getBoundingClientRect().top;
+
     // Screen Position
     let screen_position = window.innerHeight;
 
@@ -67,6 +71,11 @@ window.addEventListener('scroll', () => {
         document.querySelector('#faqs_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#faq_section"] span:nth-child(2)').style.display = 'inline';
     }
+    // else if(Math.abs(sponsors_position < screen_position)) {
+    //     allLinksBlank();
+    //     document.querySelector('#sponsors_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
+    //     document.querySelector('a[href="#sponsors_section"] span:nth-child(2)').style.display = 'inline';
+    // }
 });
 
 
