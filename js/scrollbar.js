@@ -35,8 +35,14 @@ window.addEventListener('scroll', () => {
     let contact_sec = document.querySelector('#contact_section');
     let contact_position = contact_sec.getBoundingClientRect().top;
 
-    // Screen Position
-    let screen_position = window.innerHeight;
+    // Screen Positions (These are the Height of Each Section)
+    // let screen_position = window.innerHeight;
+    let screen_home_position = document.querySelector('#navbar_with_home').offsetHeight;
+    let screen_about_position = document.querySelector('#about_section').offsetHeight;
+    let screen_isohack1_O_position = document.querySelector('#previous_year_event').offsetHeight;
+    let screen_gallery_position = document.querySelector('#isohack_gallery_section').offsetHeight;
+    let screen_faq_position = document.querySelector('#faq_section').offsetHeight - 100;
+    let screen_contact_position = document.querySelector('#contact_section').offsetHeight;   
 
     const allLinksBlank = () => {
         // Scrollbar Links Border
@@ -50,32 +56,32 @@ window.addEventListener('scroll', () => {
             allLinksName[i].style.display = "none";
     }
 
-    if (Math.abs(home_position) < screen_position) {
-        console.log(Math.abs(home_position) + ' < ' + screen_position);
+    if (Math.abs(home_position) < screen_home_position) {
+        // console.log(Math.abs(home_position) + ' < ' + screen_home_position);
         allLinksBlank();
         document.querySelector('#home_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#navbar_with_home"] span:nth-child(2)').style.display = 'inline';
     }
-    else if (Math.abs(about_position) < screen_position) {
-        console.log(Math.abs(about_position) + ' < ' + screen_position);
+    else if (Math.abs(about_position) < screen_about_position) {
+        // console.log(Math.abs(about_position) + ' < ' + screen_about_position);
         allLinksBlank();
         document.querySelector('#about_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#about_section"] span:nth-child(2)').style.display = 'inline';
     }
-    else if (Math.abs(isohack1_O_position) < screen_position) {
-        console.log(Math.abs(isohack1_O_position) + ' < ' + screen_position);
+    else if (Math.abs(isohack1_O_position) < screen_isohack1_O_position) {
+        // console.log(Math.abs(isohack1_O_position) + ' < ' + screen_isohack1_O_position);
         allLinksBlank();
         document.querySelector('#previous_year_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#previous_year_event"] span:nth-child(2)').style.display = 'inline';
     }
-    else if (Math.abs(gallery_position) < screen_position) {
-        console.log(Math.abs(gallery_position) + ' < ' + screen_position);
+    else if (Math.abs(gallery_position) < screen_gallery_position) {
+        // console.log(Math.abs(gallery_position) + ' < ' + screen_gallery_position);
         allLinksBlank();
         document.querySelector('#gallery_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#isohack_gallery_section"] span:nth-child(2)').style.display = 'inline';
     }
-    else if (Math.abs(faq_position) < screen_position) {
-        console.log(Math.abs(faq_position) + ' < ' + screen_position);
+    else if (Math.abs(faq_position) < screen_faq_position) {
+        // console.log(Math.abs(faq_position) + ' < ' + screen_faq_position);
         allLinksBlank();
         document.querySelector('#faqs_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#faq_section"] span:nth-child(2)').style.display = 'inline';
@@ -85,7 +91,8 @@ window.addEventListener('scroll', () => {
     //     document.querySelector('#sponsors_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
     //     document.querySelector('a[href="#sponsors_section"] span:nth-child(2)').style.display = 'inline';
     // }
-    else if(Math.abs(contact_position < screen_position)) {
+    else if(Math.abs(contact_position < screen_contact_position)) {
+        // console.log(Math.abs(contact_position) + ' < ' + screen_contact_position);
         allLinksBlank();
         document.querySelector('#contact_bar').style.borderLeft = "3.5px solid rgb(163,174,186)";
         document.querySelector('a[href="#contact_section"] span:nth-child(2)').style.display = 'inline';
