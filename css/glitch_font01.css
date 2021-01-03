@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
 .glitch-font-h3 {
     font-family: "Turret Road", sans-serif;
     /* font-family: "Josefin Sans", sans-serif; */
+    /* font-family: 'Pirata One', cursive; */
+    letter-spacing: 3px;
 }
 
 .glitch-font {
@@ -12,6 +15,7 @@
     mix-blend-mode: lighten;
     margin: auto;
     font-family: "Turret Road", sans-serif;
+    letter-spacing: 3px;
     font-size: 3vw;
     /*it works best when uppercase ¯\_(ツ)_/¯ */
     text-transform: uppercase;

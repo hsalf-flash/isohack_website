@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/sponsors.css" />
     <link rel="stylesheet" href="./css/glitch_font01.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
 </head>
 
 <body>
@@ -66,6 +67,14 @@
 
             <div class="mt-4">
                 <a href="#faq_section" class="humberger_link" onclick="switchToSection()">F.a.q</a>
+            </div>
+
+            <!-- <div class="mt-4">
+                <a href="#sponsors_section" class="humberger_link" onclick="switchToSection()">Sponsors</a>
+            </div> -->
+
+            <div class="mt-4">
+                <a href="#contact_section" class="humberger_link" onclick="switchToSection()">Contact Us</a>
             </div>
 
             <div class="mt-4">
@@ -115,6 +124,12 @@
                     <span>05</span> <span>Sponsors</span>
                 </a>
             </p> -->
+
+            <p class="pt-3">
+                <a href="#contact_section" id="contact_bar" class="scrollbar_link" onclick="scrollToSec(this.id)">
+                    <span>05</span> <span>Contact Us</span>
+                </a>
+            </p>
         </aside>
         <!-- || Scrollbar Section [END] -->
 
@@ -154,6 +169,9 @@
                             <!-- <li class="nav-item px-2">
                                 <a class="nav-link" href="#sponsors_section">Sponsors</a>
                             </li> -->
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#contact_section">Contact Us</a>
+                            </li>
                             <li class="nav-item px-2">
                                 <a class="btn navbar_register_btn" href="#">Register</a>
                             </li>
@@ -213,9 +231,10 @@
                                 </p>
                                 <h5 class="py-2 pl-3">"Is the event Offline or Online"</h5>
                                 <p class="about_content pl-3">
-                                    We are currently organizing the hackathon online but if the situation allows we will
-                                    try our best to make the event offline so that we can welcome you all with lots of
-                                    Food and Drinks and enjoy the hackathon in the traditional way
+                                    We are currently organizing the hackathon
+                                    <span class="font-weight-bold">online</span> but if the situation
+                                    allows we will try our best to make the event offline so that we can welcome you all
+                                    with lots of Food and Drinks and enjoy the hackathon in the traditional way
                                 </p>
                             </div>
                         </div>
@@ -228,7 +247,7 @@
 
         <!-- || Previous Year Event Section [START] -->
         <section class="previous_year_event" id="previous_year_event">
-            <div class="container pt-4 pb-5">
+            <div class="container pt-lg-4 pb-5">
                 <!-- Section Heading -->
                 <h3 class="section_heading glitch-font" data-text="ISOHACK 1.0" data-aos="fade-up">
                     <span class="glitch-font-h3">Isohack 1.O</span>
@@ -335,7 +354,7 @@
                 </h3>
 
                 <!-- Gallery Content -->
-                <div class="row">
+                <div class="row pt-lg-4 pt-3">
                     <div class="col-md-11 offset-md-1">
                         <div class="row">
                             <div class="col-md-8 col-12 mt-3" data-aos="fade-up">
@@ -723,6 +742,43 @@
         <!-- || Sponsors Section [END] -->
 
 
+        <!-- || Contact Section [START] -->
+        <section id="contact_section">
+            <div class="container pt-4 pb-5">
+                <!-- Heading -->
+                <h3 class="section_heading glitch-font" data-text="Contact Us" data-aos="fade-up">
+                    <span class="glitch-font-h3">Contact Us</span>
+                </h3>
+
+                <!-- Contacts -->
+                <div class="row">
+                    <div class="col-md-10 offset-md-1" data-aos="fade-up">
+                        <div class="container">
+                            <div class="row pt-4">
+                                <!-- Mobile Number -->
+                                <div class="col-sm-6 col-12 mt-md-4 mt-4 py-sm-4 py-2 middle_contact_grid">
+                                    <h5 class="contact_detail_head">Phone Number</h5>
+                                    <p><a href="tel:+917898927250">+91 7898927250</a></p>
+                                </div>
+
+                                <!-- Email Address -->
+                                <div class="col-sm-6 col-12 mt-md-4 mt-4 py-sm-4 py-2">
+                                    <h5 class="contact_detail_head">Email Address</h5>
+                                    <p><a href="mailto:atc.isohack@gmail.com">atc.isohack@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="row mt-sm-5 mt-3 contact_social_box">
+                                <p class="contact_social_media">You Can Also Reach Us on Our Social Media Handles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- || Contact Section [END] -->
+
+
         <!-- || Footer Section [START] -->
         <section class="footer-section">
             <footer class="footer-distributed">
@@ -734,7 +790,7 @@
                             class="fa fa-linkedin"></i></a>
                     <a href="https://www.instagram.com/isohack2.0/" target="_blank"><i class="fa fa-instagram"></i></a>
                     <a href="https://www.youtube.com/channel/UCRC_P_qWAUUlxd_P05BRtIw" target="_blank"><i
-                            class="fa fa-youtube-play"></i></a>
+                            class="fa fa-youtube"></i></a>
                 </div>
 
                 <div class="footer-left">

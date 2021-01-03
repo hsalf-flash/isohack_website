@@ -103,7 +103,7 @@ a.nav-link:hover {
 
 .humberger_link_box {
     clear: both;
-    padding-top: 30px;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +127,7 @@ a.humberger_link {
     display: block;
     margin: auto;
     color: #a3aeba;
-    font-size: 21px;
+    font-size: 20px;
     letter-spacing: 1px;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
