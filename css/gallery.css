@@ -34,10 +34,15 @@
   /* Modal Content (Image) */
   .modal-content {
     margin: auto;
-    margin-top: 100px;
     display: block;
     width: 80%;
     max-width: 700px;
+  }
+
+  @media screen and (max-width: 575px) {
+    .modal-content {
+      margin-top: 100px;
+    }
   }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
