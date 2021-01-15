@@ -3,7 +3,7 @@
 #scroll_bar {
     position: fixed;
     top: 50%;
-    left: 4.5%;
+    left: 4.2%;
     z-index: 999;
     transform: translate(0%, -45%);
     width: 140px;
