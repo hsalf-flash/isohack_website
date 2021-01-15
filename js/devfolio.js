@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let devfolioOptions = {
         buttonSelector: '#devfolio-apply-now',
-        key: 'isohack.devfolio.co',
+        key: 'isohack-2.devfolio.co',
     }
 
     let script = document.createElement('script');
