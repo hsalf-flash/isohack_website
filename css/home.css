@@ -307,3 +307,8 @@ skew to change the 'thickness' of the glitch.*/
     transform: skew(-4deg);
   }
 }
+
+/* Devfolio Apply Button */
+.apply-button {
+  z-index: 2000 !important;
+}
