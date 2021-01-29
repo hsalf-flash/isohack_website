@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .sponsors_link img {
@@ -25,4 +25,15 @@
     .sponsors_link {
         height: 80px;
     }
+}
+
+@media screen and (max-width: 450px) {
+    .sponsors_link {
+        height: 60px;
+    }
+}
+
+.echoAR_logo {
+    border-radius: 5px;
+    border: 2px dashed grey;
 }
