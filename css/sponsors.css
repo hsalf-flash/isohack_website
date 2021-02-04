@@ -35,7 +35,7 @@
 
 .echoAR_logo {
     border-radius: 5px;
-    border: 2px dashed grey;
+    border: 1.5px dashed rgba(255, 255, 255, 0.6);
 }
 
 .indore_logo {
