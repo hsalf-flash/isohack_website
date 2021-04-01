@@ -32,7 +32,8 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.querySelector("#timer_field").innerHTML = "REGISTRATIONS CLOSED !!!";
+        // document.querySelector("#timer_field").innerHTML = "REGISTRATIONS CLOSED !!!";
+        document.querySelector("#timer_field").innerHTML = "Dates will be Announced Soon !!!";
         document.querySelector("#timer_field").style.color = "#4dd0e1";
     }
 }, 1000);
